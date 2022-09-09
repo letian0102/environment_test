@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book_collection.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book_collection.author %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @book_collection.price %>
+</p>
+
+<p>
+  <strong>Publishdate:</strong>
+  <%= @book_collection.publishdate %>
+</p>
+
+<%= link_to 'Edit', edit_book_collection_path(@book_collection) %> |
+<%= link_to 'Back', book_collections_path %>
